@@ -3,32 +3,32 @@
 codirector, % Uncomment to add a codirector to the title page
 ]{charter} 
 
-
+\usepackage{makecell} %
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Sistema de monitoreo remoto de apiarios} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
-\posgrado{Carrera de Especialización en Sistemas Embebidos} 
-%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+%\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+\posgrado{Carrera de Especialización en Internet de las Cosas} 
 %\posgrado{Carrera de Especialización en Intelegencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Cynthia Escobar} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Mg. Ing. Carlos Moisés Fontela}
+\pertenenciaDirector{FIUBA} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
-\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+\codirector{TS Ciro Romero} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Enrique Soto}
+\empresaCliente{La AgroApicola}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -38,9 +38,9 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
+\fechaINICIO{21 de octubre de 2021}    %Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{8 de diciembre de 2021} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{20 de noviembre de 2022}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -68,8 +68,8 @@ codirector, % Uncomment to add a codirector to the title page
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+0      & Creación del documento                                 & 21/10/2021 \\ \hline
+1      & Se completa hasta el punto 5 inclusive                 & 01/11/2021 \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con la Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de medición, visualización y emisión de alertas destinado al monitoreo de apiarios, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y {\$50000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -103,7 +103,7 @@ Se adjunta a esta acta la planificación inicial.
 \centering
 \begin{tabular}{ccc}
 \begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
-\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
+\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} Carlos Moisés Fontela \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
 %\begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & \begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
 %\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
 \end{tabular}
@@ -115,57 +115,69 @@ Se adjunta a esta acta la planificación inicial.
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
+Las abejas son indispensables en la conservación del ecosistema y en la producción de alimentos gracias al importante papel que juegan como polinizadores en la fertilización y reproducción de las plantas.
+% ya que en su afán de alimentarse transportan polen de flor en flor y contribuyen a la fecundación y reproducción de las plantas.
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección
-
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
-
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
+La apicultura es la actividad realizada por el hombre que consiste en la cría y en el cuidado apropiado de las abejas para lograr que sus colonias prosperen y se pueda obtener de ellas para el consumo y/o comercialización:
 \begin{itemize}
-	\item ¿Cómo se vincula este proyecto con la misión de la organización?
-	\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-	\item ¿Cuáles son las necesidades que debe satisfacer?
-	\item ¿Por dónde pasa la innovación?
+\item miel
+\item polen
+\item jalea real
+\item propóleo
+\item cera
 \end{itemize}
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase, se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+Es una actividad noble que apesar de tener un fin económico trabaja buscando un equilibrio entre la explotación comercial y preservación de las abejas y del medio ambiente.
 
-%\vspace{25px}
+A pesar de los avances tecnológicos la apicultura sigue siendo una práctica casi artesana ya que el apicultor debe estar muy involucrado en el mantenimiento y cuidado de sus colmenas. Se deben realizar visitas periódicas para controlar la salubridad de las abejas, chequear los niveles de alimentos y el estado general de las colmenas.
+Como los apiarios suelen estar instalados lejos de los centros urbanos estas visitas suelen consumir tiempo y recursos, y de no realizar visitas periódicas uno se arriesga a poder perder colmenas.
+
+El objetivo de esta solución es ayudar a minimizar la intervención del apicultor y sus costos asociados, proveyéndole de una herramienta que le permita monitorear distintas variables de sus colmenas de manera remota.
+
+
+El monitoreo remoto propuesto se planea realizar a través de la recopilación de datos con los siguientes instrumentos instalados dentro de la cámara de cría:
+\begin{itemize}
+\item sensor de temperatura 
+\item sensor de humedad
+\item sensor de sonido
+\item sensor de inclinación (giróscopo)
+\end{itemize}
+
+
+En la figura 1 se presenta el diagrama en bloques del sistema que representa los distintos components que trabajarán en conjunto para recopilar mediciones y permitir controlar remotamente el estado de las colmenas.
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
+\includegraphics[width=1\textwidth]{./Figuras/diagBloquesPropio.jpg}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
 
+
 \vspace{25px}
-
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
-
-
-\section{2. Identificación y análisis de los interesados}
-\label{sec:interesados}
-
-\begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
+\vspace{25px}
+\vspace{25px}
+La solución se compone de las siguientes partes:
 \begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
+\item medición de la temperatura, de la humedad, de sonido en el interior de la cámara de cría y de su inclinación
+%\item transporte de los datos
+\item lógica de procesamiento y persistencia de datos
+\item visualización de métricas y alarmas
 \end{itemize}
 
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
+Se propone que las mediciones sean recolectadas en los apiarios, transmitidas a un broker MQTT para finalmente ser enviardas a un servicio backend para su procesamiento, análisis y persistencia.
+También se contempla el desarrollo de un frontend para que el usuario pueda:
+\begin{itemize}
+\item acceder a la visualización de las métricas y alertas
+\item acceder a un dashboard de administración y configuración
+\end{itemize}
+Desde este frontend se espera que el usuario pueda establecer los thresholds de aceptabilidad para cada una de métricas, así como la configuración de las acciones a tomar al alarmarse el sistema.
+
+\vspace{25px}
+\vspace{25px}
+\vspace{25px}
+\section{2. Identificación y análisis de los interesados}
+\label{sec:interesados}
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -174,75 +186,58 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
+%Auspiciante   &        -          &        -      	&     -   	\\ \hline
 Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+%Impulsor      &                   &              	&        	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
-Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Colaboradores &      Anibal Taverna             & MAGyP            	&     Coordinación de Apicultura   	\\ \hline
+Orientadores  & \makecell[l]{Carlos Fontela \\ Ciro Romero}	       & \pertesupname 	& \makecell[l]{Director Trabajo final\\Codirector Trabajo final} \\ \hline
+%Equipo        & -  &  - & - \\ \hline
+%Opositores    &                   &              	&        	\\ \hline
+%Usuario final &                   &              	&        	\\ \hline
 \end{tabularx}
 \end{table}
-
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
-\begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
-\end{itemize}
-
-\end{consigna}
 
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+El propósito de este proyecto es colaborar con el cuidado de las colonias de abejas a cargo de apicultores y colaborar a mejorar la productividad de la actividad poniendo en marcha un sistema que recabe información de las condiciones internas de la cámara de cría y permita detectar de manera temprana enfermedades, accidentes, enjambrazones minimizando la pérdida de colmenas con una intervención mínima del apicultor.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+El alcance de este proyecto incluye: 
+\begin{itemize}
+\item desarrollo de una aplicación backend que se encargue de:
+	\begin{itemize}
+	\item gestión de usuarios, configuraciones de thresholds, alertas, notificaciones
+	\item procesamiento de las mediciones capturadas
+	\item gestión de altas, bajas y modificaciones de nuevos apiarios
+	\end{itemize}
+\item desarrollo de una aplicación web que permita visualizar las métricas y acceder a la configuración del sistema
+\item desarrollo de un prototipo que integre los sensores instalados en el interior de la cámara de cría, con capacidad de conectarse a internet para el envío de los datos a un servidor
+\end{itemize}
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+El presente proyecto no incluye:
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
-
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
-
+\begin{itemize}
+\item la confección de la placa PCB
+\item instalación de red wifi
+\end{itemize}
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+\item se tendrá acceso a una red WiFi o a la red GSM/GPRS en el apiario
+\item se probará simulando una red de sensores con distintas configuraciones ambientales
+\item se contará con la colaboración del cliente para la evaluación de las pruebas
+\item se contará con el tiempo suficiente para realizar las distintas tareas
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
